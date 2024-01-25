@@ -68,6 +68,12 @@
       "options": {
         "buildTarget": "react-store:build"
       }
+    },
+    "targets": {
+      "deploy": {
+        "dependsOn": "build",
+        "command": "netlify deploy --dir=dist/react-store"
+      }
     }
   },
   "tags": []
